@@ -35,6 +35,7 @@ function App() {
 
   const generateUrl=()=>{
      axios.post("https://db-short-url.herokuapp.com/shortUrls",text).then((res)=>{
+       alert("Url Generated Successfully!!")
         getUrl()
      }).catch((err)=>{
        console.log(err.message)
